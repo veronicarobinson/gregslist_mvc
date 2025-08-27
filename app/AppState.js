@@ -1,4 +1,5 @@
 import { Car } from './models/Car.js'
+import { House } from './models/House.js'
 import { EventEmitter } from './utils/EventEmitter.js'
 import { createObservableProxy } from './utils/ObservableProxy.js'
 
@@ -62,6 +63,26 @@ class ObservableAppState extends EventEmitter {
     }),
 
   ]
+
+  // NOTE START OF HOUSES
+  houses = [
+    new House({
+      title: "Newly Renovated!",
+      builtYear: 1974,
+      bedrooms: 3,
+      bathrooms: 2.5,
+      sqft: 1400,
+      price: 375000,
+      description: "Newly renovated mid-century modern home",
+      imgUrl: "https://plus.unsplash.com/premium_photo-1689609950112-d66095626efb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    })
+  ]
+
+
 }
+
+
+
+
 
 export const AppState = createObservableProxy(new ObservableAppState())

@@ -20,6 +20,8 @@ label {
   align-items: end;
 }
 
+/* NOTE GO CHANGE EVERTHING TO *.overall-price */
+
 .car-price {
   position: absolute;
   top: 0;
@@ -34,4 +36,36 @@ label {
 
 .car-border {
   border: inset 10px black;
+}
+
+.house-price {
+  position: absolute;
+  background-color: rgba(243, 246, 248, 0.909);
+  top: 0;
+  right: 0,
+}
+
+.house-img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  margin-top: 10px;
+
+}
+
+.house-icon {
+  color: rgb(140, 145, 241);
+  font-size: 35px;
+  margin-top: 9%;
+}
+
+.house-uploaded {
+  position: absolute;
+  color: rgba(7, 14, 136, 0.568);
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.house-border {
+  border-color: black;
 }

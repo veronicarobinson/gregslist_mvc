@@ -67,5 +67,5 @@ label {
 }
 
 .house-border {
-  border-color: black;
+  border: 6px solid rgba(200, 199, 224, 0.913);
 }
